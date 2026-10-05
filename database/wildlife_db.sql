@@ -2,7 +2,6 @@
 -- PostgreSQL database dump
 --
 
-\restrict 1EglpNiPvQA3YAyJNHbuIQ2P2bjt9JGVorpz0GuhXBZuHsmvZG2RFeDhjKzLbfb
 
 -- Dumped from database version 18.4 (Homebrew)
 -- Dumped by pg_dump version 18.4 (Homebrew)
@@ -53,7 +52,7 @@ CREATE TABLE public.audio_predictions (
 );
 
 
-ALTER TABLE public.audio_predictions OWNER TO wildlife_app;
+
 
 --
 -- Name: identified_animals; Type: TABLE; Schema: public; Owner: wildlife_app
@@ -70,7 +69,7 @@ CREATE TABLE public.identified_animals (
 );
 
 
-ALTER TABLE public.identified_animals OWNER TO wildlife_app;
+
 
 --
 -- Name: image_detections; Type: TABLE; Schema: public; Owner: wildlife_app
@@ -91,7 +90,7 @@ CREATE TABLE public.image_detections (
 );
 
 
-ALTER TABLE public.image_detections OWNER TO wildlife_app;
+
 
 --
 -- Name: inference_runs; Type: TABLE; Schema: public; Owner: wildlife_app
@@ -110,7 +109,7 @@ CREATE TABLE public.inference_runs (
 );
 
 
-ALTER TABLE public.inference_runs OWNER TO wildlife_app;
+
 
 --
 -- Name: media_assets; Type: TABLE; Schema: public; Owner: wildlife_app
@@ -134,7 +133,7 @@ CREATE TABLE public.media_assets (
 );
 
 
-ALTER TABLE public.media_assets OWNER TO wildlife_app;
+
 
 --
 -- Name: species; Type: TABLE; Schema: public; Owner: wildlife_app
@@ -150,7 +149,7 @@ CREATE TABLE public.species (
 );
 
 
-ALTER TABLE public.species OWNER TO wildlife_app;
+
 
 --
 -- Name: image_detection_results; Type: VIEW; Schema: public; Owner: wildlife_app
@@ -174,7 +173,7 @@ CREATE VIEW public.image_detection_results AS
      LEFT JOIN public.species s ON ((s.id = d.species_id)));
 
 
-ALTER VIEW public.image_detection_results OWNER TO wildlife_app;
+
 
 --
 -- Name: model_versions; Type: TABLE; Schema: public; Owner: wildlife_app
@@ -193,7 +192,7 @@ CREATE TABLE public.model_versions (
 );
 
 
-ALTER TABLE public.model_versions OWNER TO wildlife_app;
+
 
 --
 -- Name: reidentifications; Type: TABLE; Schema: public; Owner: wildlife_app
@@ -211,7 +210,7 @@ CREATE TABLE public.reidentifications (
 );
 
 
-ALTER TABLE public.reidentifications OWNER TO wildlife_app;
+
 
 --
 -- Name: species_id_seq; Type: SEQUENCE; Schema: public; Owner: wildlife_app
@@ -225,7 +224,7 @@ CREATE SEQUENCE public.species_id_seq
     CACHE 1;
 
 
-ALTER SEQUENCE public.species_id_seq OWNER TO wildlife_app;
+
 
 --
 -- Name: species_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: wildlife_app
@@ -248,7 +247,7 @@ CREATE TABLE public.users (
 );
 
 
-ALTER TABLE public.users OWNER TO wildlife_app;
+
 
 --
 -- Name: species id; Type: DEFAULT; Schema: public; Owner: wildlife_app
@@ -698,5 +697,5 @@ ALTER TABLE ONLY public.reidentifications
 -- PostgreSQL database dump complete
 --
 
-\unrestrict 1EglpNiPvQA3YAyJNHbuIQ2P2bjt9JGVorpz0GuhXBZuHsmvZG2RFeDhjKzLbfb
+
 
